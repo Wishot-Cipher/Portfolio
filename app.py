@@ -68,6 +68,10 @@ def calculator():
 def todo_list():
     return render_template("portfolio's details/Todo-list.html")
 
+@app.route('/expense tracker')
+def expense():
+    return render_template("portfolio's details/expense-Tracker.html")
+
 
 app.config["MAIL_SERVER"] = 'smtp.gmail.com'
 app.config["MAIL_PORT"] = 465
